@@ -76,9 +76,15 @@ elif 'open google' in query.lower():
     webbrowser.get(chromedir).open("google.com")    
 
 elif 'open github' in query.lower():
-    speak("Opening github as quickly as possible..")
+    speak("Opening heroku as quickly as possible..")
     chromedir= "C:/Program Files (x86)/Google/Chrome/Application/chrome.exe %s"
     webbrowser.get(chromedir).open("github.com")
+
+
+elif 'open heroku' in query.lower():
+    speak("Opening github as quickly as possible..")
+    chromedir= "C:/Program Files (x86)/Google/Chrome/Application/chrome.exe %s"
+    webbrowser.get(chromedir).open("https://dashboard.heroku.com/apps")        
 
 elif 'open reddit' in query.lower():
     speak("Opening reddit as quickly as possible..")
